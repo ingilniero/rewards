@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reward: one
+  bestowment: one
+  identifier: 0
+
+two:
+  reward: two
+  bestowment: two
+  identifier: 0

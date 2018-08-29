@@ -1,0 +1,12 @@
+<h1>Rewards</h1>
+
+<p>Current reward:</p>
+<ul>
+  <%= render @current_reward.pieces %>
+</ul>
+
+<ul>
+  <%= render @rewards %>
+</ul>
+
+<%= link_to 'New Bestowment', new_bestowment_path %>
