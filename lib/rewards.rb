@@ -1,5 +1,6 @@
-require "rewards/engine"
+require 'byebug'
 
 module Rewards
-  # Your code goes here...
+  require "rewards/engine"
+  require "rewards/acts_as_rewardable"
 end

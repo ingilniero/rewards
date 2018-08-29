@@ -1,14 +1,13 @@
 # Rewards
-Short description and motivation.
 
-## Usage
-How to use my plugin.
+Engine that bestows Control's users the ability to bestow rewards to other users
+
+## Development
 
 ## Installation
-Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rewards'
+gem 'rewards', path: '../rewards'
 ```
 
 And then execute:
@@ -16,13 +15,24 @@ And then execute:
 $ bundle
 ```
 
-Or install it yourself as:
-```bash
-$ gem install rewards
+Make the user rewardable
+```ruby
+class User < ApplicationRecord
+  acts_as_rewardable
+
 ```
 
-## Contributing
-Contribution directions go here.
+Mount the engine into Control
+```ruy
+# config/routes.rb
 
-## License
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+mount Rewards::Engine, at: '/rewards'
+
+```
+Run migrations
+
+```bash
+# in esteban.control directory
+bin/rails db:migrate
+RAILS_ENV=test bin/rails db:migrate
+```
