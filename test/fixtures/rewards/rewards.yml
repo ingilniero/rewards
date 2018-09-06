@@ -13,3 +13,11 @@ angel_current:
   user: angel
   state: 0
 # column: value
+
+haro_current:
+  user: haro
+  state: 0
+
+gil_current:
+  user: gil
+  state: 0
