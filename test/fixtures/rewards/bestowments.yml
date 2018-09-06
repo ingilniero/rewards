@@ -9,3 +9,14 @@ one: {}
 #
 two: {}
 # column: value
+aranza_to_haro:
+  bestower: aranza
+  bestowed: haro
+
+angel_to_haro:
+  bestower: angel
+  bestowed: haro
+
+gil_to_haro:
+  bestower: gil
+  bestowed: haro

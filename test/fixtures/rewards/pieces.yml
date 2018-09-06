@@ -9,3 +9,18 @@ two:
   reward: two
   bestowment: two
   identifier: 0
+
+haro_first:
+  reward: haro_current
+  bestowment: aranza_to_haro
+  identifier: 0
+
+haro_second:
+  reward: haro_current
+  bestowment: angel_to_haro
+  identifier: 1
+
+haro_third:
+  reward: haro_current
+  bestowment: gil_to_haro
+  identifier: 2
